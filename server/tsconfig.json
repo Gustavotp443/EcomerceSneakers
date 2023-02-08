@@ -1,26 +1,31 @@
 {
   "compilerOptions": {
-    "target": "es2017",                                  
-    "experimentalDecorators": true,                   
-    "emitDecoratorMetadata": true,                    
-    "module": "commonjs",                                
-    "rootDir": "./src",                                 
-    "typeRoots": [
-      ".node_modules/@types",
-      ".src/@types"
-    ],                                
-    "resolveJsonModule": true,                     
-    "allowJs": true,                                    
-    "outDir": "./dist",                                   
-    "removeComments": true,                           
-    "esModuleInterop": true,                            
-    "forceConsistentCasingInFileNames": true,            
+    "target": "es2017",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "rootDir": "./src",
+    "strictNullChecks": true,
+    "types": ["@types/node", "@types/jest"],
+    "typeRoots": [".node_modules/@types", ".src/@types"],
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "baseUrl": ".",
-    "paths":{
-      "@controllers/*":["./src/controllers/*"],
-      "@models/*":["./src/models/*"],
-      "@config/*":["./src/config/*"]
-    }                              
+    "paths": {
+      "@controllers/*": ["./src/controllers/*"],
+      "@models/*": ["./src/models/*"],
+      "@config/*": ["./src/config/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "./src"
   }
 }
