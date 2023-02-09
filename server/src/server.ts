@@ -1,10 +1,4 @@
-import express, { type Response, type Request } from 'express'
-
-const app = express()
-
-app.get('/', (req: Request, res: Response) => {
-  return res.json({ message: 'Hello World' })
-})
+import app from "./app"
 
 const port = 3333
 app.listen(port, () => {

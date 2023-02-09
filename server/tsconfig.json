@@ -16,10 +16,12 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "baseUrl": ".",
+    "noPropertyAccessFromIndexSignature": false,
     "paths": {
       "@controllers/*": ["./src/controllers/*"],
       "@models/*": ["./src/models/*"],
-      "@config/*": ["./src/config/*"]
+      "@config/*": ["./src/config/*"],
+      "@routes/*": ["./src/routes/*"]
     }
   },
   "include": ["src/**/*"],

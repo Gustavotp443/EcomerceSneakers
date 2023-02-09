@@ -9,11 +9,12 @@
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
+  "eslintIgnore": "jest.config.ts",
   "overrides": [],
-  "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "parser": "@typescript-eslint/parser",
     "ecmaVersion": "latest",
-    "sourceType": "module"
-    //"project": ["./server/tsconfig.json"]
+    "sourceType": "module",
+    "project": ["./server/tsconfig.json"]
   }
 }
